@@ -1,2 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+section::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 3px;
+}
+
+section::-webkit-scrollbar-thumb{
+    width: 7px;
+    border-radius: 3px;
+    background-color: #007F0EFF;
+}
+
+@media screen and (max-width:350px ) {
+    section{
+        width: 90%;
+    }
+}
