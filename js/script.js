@@ -186,7 +186,7 @@ $btnCalcular.addEventListener("click", ()=>{
 	if (indice < 18.5) {
 		$descripcion.innerHTML = 
 		`<h3 style="text-shadow: 0 2px 0 #404040FF">RESULTADO</h3>
-		<p>Su IMC es <b>${Math.round(indice)}</b>, lo que indica que su peso está en la categoría de Bajo peso para adultos de su misma estatura.
+		<p>Su IMC es <b>${indice.toFixed(2)}</b>, lo que indica que su peso está en la categoría de Bajo peso para adultos de su misma estatura.
 		Para su estatura, un peso normal variaría entre 49.8  a  67 kilogramos.
 		Hable con su proveedor de atención médica para establecer las posibles causas del bajo peso y si necesita ganar peso.
 		<a href="index.html">Hacer Calculo nuevo</a></p>
@@ -195,7 +195,7 @@ $btnCalcular.addEventListener("click", ()=>{
 	} else if(indice >= 18.5 && indice <= 24.9){
 		$descripcion.innerHTML = 
 		`<h3 style="text-shadow: 0 2px 0 #404040FF">RESULTADO</h3>
-		<p>Su IMC es <b>${Math.round(indice)}	</b>, lo que indica que su peso está en la categoría Normal para adultos de su misma estatura.
+		<p>Su IMC es <b>${indice.toFixed(2)}	</b>, lo que indica que su peso está en la categoría Normal para adultos de su misma estatura.
 		Para su estatura, un peso normal variaría entre 56  a  75.4 kilogramos.
 		Mantener un peso saludable puede reducir el riesgo de enfermedades crónicas asociadas al sobrepeso y la obesidad.
 		<a href="index.html">Hacer Calculo nuevo</a></p>
@@ -204,7 +204,7 @@ $btnCalcular.addEventListener("click", ()=>{
 	} else if(indice >= 25.0 && indice < 29.9){
 		$descripcion.innerHTML = 
 		`<h3 style="text-shadow: 0 2px 0 #404040FF">RESULTADO</h3>
-		<p>Su IMC es <b>${Math.round(indice)}</b>, lo que indica que su peso está en la categoría de Sobrepeso para adultos de su misma estatura.
+		<p>Su IMC es <b>${indice.toFixed(2)}</b>, lo que indica que su peso está en la categoría de Sobrepeso para adultos de su misma estatura.
 		Para su estatura, un peso normal variaría entre 56 a 75.4 kilogramos.
 		Las personas que tienen sobrepeso o son obesas tienen un mayor riesgo de afecciones crónicas, tales como hipertensión arterial, diabetes y colesterol alto.
 		<a href="index.html">Hacer Calculo nuevo</a></p>
@@ -213,7 +213,7 @@ $btnCalcular.addEventListener("click", ()=>{
 	} else {
 		$descripcion.innerHTML = 
 		`<h3 style="text-shadow: 0 2px 0 #404040FF">RESULTADO</h3>
-		<p> Su IMC es <b>${Math.round(indice)}</b>, lo que indica que su peso está en la categoría de Obeso para adultos de su misma estatura.
+		<p> Su IMC es <b>${indice.toFixed(2)}</b>, lo que indica que su peso está en la categoría de Obeso para adultos de su misma estatura.
 		Para su estatura, un peso normal variaría entre 56 a 75.4 kilogramos.
 		Las personas que son obesas tienen un mayor riesgo de afecciones crónicas, tales como hipertensión arterial, diabetes y colesterol alto.
 		<a href="index.html">Hacer Calculo nuevo</a> </p>
