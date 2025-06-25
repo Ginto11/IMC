@@ -1,3 +1,6 @@
+console.log("Mi APP para calcular el IMC.");
+
+
 document.body.style.background = "#000";
 document.body.style.overflowY = "hidden";
 document.documentElement.style.fontFamily = "Acme";
